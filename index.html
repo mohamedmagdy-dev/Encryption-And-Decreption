@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <title>Cyber Security</title>
-</head>
-<body>
-  <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #607d8b;
+      }
+
+      .methods {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+      }
+
+      h2,
+      h1 {
+        background: #795548;
+        padding: 10px;
+        color: white;
+      }
+
+      .methods > div {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+      }
+
+      .methods > div a {
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 7px;
+        border: 2px solid #ffffff;
+        color: white;
+        background: #795548;
+      }
+    </style>
+    <title>Cyber Security</title>
+  </head>
+  <body>
+    <h1>Select Your Work Method</h1>
+    <div class="methods">
+      <div class="encryption-methods">
+        <h2>Encryption Methods</h2>
+        <a target="_blank" href="encryption-methods/encryption-caeser.html"
+          >Caesar Encryption</a
+        >
+        <a target="_blank" href="encryption-methods/encryption-Vigenère.html"
+          >Vigenère Table Encryption</a
+        >
+        <a
+          target="_blank"
+          href="encryption-methods/encryption-Transposition.html"
+          >Transposition Encryption</a
+        >
+        <a target="_blank" href="encryption-methods/encryption-playFair.html"
+          >playFair Encryption</a
+        >
+      </div>
+      <div class="decryption-methods">
+        <h2>Decryption Methods</h2>
+        <a target="_blank" href="encryption-methods/decryption-caeser.html"
+          >Caesar Decryption</a
+        >
+        <a target="_blank" href="encryption-methods/decryption-Vigenère.html"
+          >Vigenère Table Decryption</a
+        >
+        <a
+          target="_blank"
+          href="encryption-methods/decryption-Transposition.html"
+          >Transposition Decryption</a
+        >
+        <a target="_blank" href="encryption-methods/decryption-playFair.html"
+          >playFair Decryption</a
+        >
+      </div>
+    </div>
+  </body>
 </html>
