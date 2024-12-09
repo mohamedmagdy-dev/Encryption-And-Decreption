@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/form-style.css" />
     <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/loader.css" />
     <title>Caesar Encryption</title>
   </head>
   <body>
+    <div class="loader">
+      <div class="typewriter">
+        <div class="slide"><i></i></div>
+        <div class="paper"></div>
+        <div class="keyboard2"></div>
+      </div>
+    </div>
     <div class="main flex" id="m">
       <div class="keyboard flex" id="k">
         <div class="screen" id="s">
@@ -56,6 +64,7 @@
             </div>
           </div>
         </div>
+
         <div class="keyboard__front face"></div>
         <div class="keyboard__back face"></div>
         <div class="keyboard__right face"></div>
@@ -573,5 +582,6 @@
     </div>
     <script src="../methods/main.js"></script>
     <script src="../methods/encryption-caeser.js"></script>
+    <script src="../methods/loader.js"></script>
   </body>
 </html>

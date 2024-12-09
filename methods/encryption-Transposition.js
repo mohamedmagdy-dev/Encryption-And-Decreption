@@ -92,9 +92,13 @@ caesarKey.oninput = () => {
 
 // ReEncryption When Change Iteration Count
 caesarIterationCount.oninput = () => {
-  encryptionSelection(
-    plainTextField.value,
-    caesarKey.value,
-    caesarIterationCount.value
-  );
+  if (encryptedTextField.value !== "") {
+    encryptionSelection(
+      encryptedTextField.value,
+      caesarKey.value,
+      caesarIterationCount.value
+    );
+  } else {
+    caesarIterationCount.value = 1;
+  }
 };
